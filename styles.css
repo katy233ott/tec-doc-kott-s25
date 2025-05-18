@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #212222;
+  color: #1a1a1a;
+  background-image: url("https://www.transparenttextures.com/patterns/concrete-wall-2.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 260px;
+  height: 100vh;
+  background: linear-gradient(#222, #444);
+  color: #fff;
+  border-right: 2px solid #8b0000;
+  padding: 20px;
+  overflow-y: auto;
+  z-index: 1000;
+}
+
+#navbar header {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #8b0000;
+  color: #c00;
+}
+
+.nav-link {
+  display: block;
+  padding: 12px 0;
+  border-bottom: 1px solid #444;
+  color: #f5f0e6;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: #c00;
+}
+
+#main-doc {
+  margin-left: 280px;
+  padding: 40px;
+  max-width: 900px;
+}
+
+.main-section {
+  margin-bottom: 50px;
+  border-left: 6px solid #8b0000;
+  background: #fffaf2;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.main-section header {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #8b0000;
+}
+
+code {
+  display: block;
+  background: #f0e6d6;
+  padding: 10px;
+  margin: 10px 0;
+  border-left: 4px solid #8b0000;
+  font-family: monospace;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 6px;
+  margin: 15px 0;
+}
+
+@media (max-width: 768px) {
+  #navbar {
+    position: relative;
+    width: 100%;
+    height: auto;
+    border-right: none;
+    border-bottom: 1px solid #ccc;
+  }
+
+  #main-doc {
+    margin-left: 0;
+    padding: 20px;
+  }
+}
